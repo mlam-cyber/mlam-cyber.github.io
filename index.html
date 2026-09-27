@@ -3,28 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ sơ Giảng viên & Nghiên cứu khoa học</title>
+    <title>ThS. Mai Lam | Lecturer & Researcher</title>
     <style>
         * { box-sizing: border-box; }
         body {
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
             line-height: 1.6;
-            color: #2b2b2b;
-            max-width: 900px;
+            color: #2c3e50;
+            max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f6f9;
+            background-color: #f8f9fa;
         }
+        
+        /* Header section with Avatar layout */
         header {
             background: #003366;
             color: white;
-            padding: 30px 25px;
+            padding: 30px;
             border-radius: 8px;
             margin-bottom: 25px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
         }
-        h1 { margin: 0 0 8px 0; font-size: 28px; }
-        .subtitle { font-style: italic; opacity: 0.9; margin-bottom: 15px; }
-        .contact-info a { color: #66b2ff; text-decoration: none; margin-right: 15px; font-size: 15px; }
+        .avatar-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .header-content { flex: 1; }
+        h1 { margin: 0 0 5px 0; font-size: 28px; }
+        .subtitle { font-size: 16px; opacity: 0.9; margin-bottom: 12px; }
+        .contact-info { font-size: 14px; }
+        .contact-info a { color: #66b2ff; text-decoration: none; margin-right: 15px; }
         .contact-info a:hover { text-decoration: underline; }
         
         section {
@@ -32,85 +47,125 @@
             padding: 25px;
             margin-bottom: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
         h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 6px; margin-top: 0; font-size: 20px; }
         
         ul, ol { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .pub-title { font-weight: bold; }
-        .pub-journal { font-style: italic; color: #555; }
+        li { margin-bottom: 12px; }
+        .pub-title { font-weight: bold; color: #111; }
+        .pub-authors { color: #444; }
+        .pub-journal { font-style: italic; color: #0056b3; }
         
-        .btn-cv {
-            display: inline-block;
-            background: #003366;
-            color: white;
-            padding: 10px 18px;
-            border-radius: 5px;
-            text-decoration: none;
+        .badge {
+            background-color: #e3f2fd;
+            color: #0d47a1;
+            padding: 3px 8px;
+            font-size: 12px;
+            border-radius: 4px;
             font-weight: bold;
-            margin-top: 10px;
-            font-size: 14px;
+            margin-left: 5px;
         }
-        .btn-cv:hover { background: #002244; }
+        
+        @media (max-width: 600px) {
+            header { flex-direction: column; text-align: center; }
+            .avatar-img { width: 120px; height: 120px; }
+        }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>TS. [Họ và Tên của bạn]</h1>
-        <div class="subtitle">Giảng viên / Nhà nghiên cứu - Khoa [Tên Khoa]</div>
-        <p>Trường Đại học [Tên Trường]</p>
-        <div class="contact-info">
-            📧 Email: <a href="mailto:email@university.edu.vn">email@university.edu.vn</a>
-            🔗 <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-            🔗 <a href="https://orcid.org" target="_blank">ORCID</a>
+        <!-- Ảnh avatar sẽ tự lấy file avatar.jpg bạn tải lên -->
+        <img src="avatar.jpg" alt="ThS. Mai Lam" class="avatar-img" onerror="this.src='https://via.placeholder.com/140?text=Mai+Lam'">
+        <div class="header-content">
+            <h1>ThS. Mai Lam</h1>
+            <div class="subtitle">Giảng viên / Nghiên cứu sinh - Khoa Khoa học Máy tính</div>
+            <p style="margin: 5px 0 15px 0; font-size: 14px;">Trường Đại học CNTT & Truyền thông Việt - Hàn (VKU), Đại học Đà Nẵng</p>
+            <div class="contact-info">
+                📍 470 Đường Trần Đại Nghĩa, Ngũ Hành Sơn, Đà Nẵng<br>
+                🔗 <a href="https://scholar.google.com/citations?user=aZ8Pp3sAAAAJ&hl=vi" target="_blank">Google Scholar Profile</a>
+            </div>
         </div>
     </header>
 
     <section id="bio">
-        <h2>Giới thiệu (Biography)</h2>
+        <h2>Tiểu sử & Quá trình đào tạo (Biography)</h2>
         <p>
-            Tôi hiện là Giảng viên tại Khoa [Tên Khoa], Trường Đại học [Tên Trường]. 
-            Các hướng nghiên cứu chính của tôi tập trung vào [Lĩnh vực 1], [Lĩnh vực 2] và [Lĩnh vực 3].
+            Tôi hiện là Giảng viên tại Khoa Khoa học Máy tính, Trường Đại học CNTT & Truyền thông Việt - Hàn (Đại học Đà Nẵng). 
+            Hiện tại, tôi đang là Nghiên cứu sinh Tiến sĩ tại <strong>Đại học Công nghệ Quốc gia Đài Bắc (Taiwan)</strong>.
         </p>
-        <!-- Nút tải file CV -->
-        <a href="CV_Mlam.pdf" class="btn-cv" target="_blank">📄 Tải CV hoàn chỉnh (PDF)</a>
+        <ul>
+            <li><strong>2019 – Nay:</strong> Nghiên cứu sinh Tiến sĩ, Đại học Công nghệ Quốc gia Đài Bắc (Taiwan).</li>
+            <li><strong>2014 – 2017:</strong> Thạc sĩ Khoa học Máy tính & Kỹ thuật Thông tin, Đại học Quốc lập Trung ương (Taiwan).</li>
+            <li><strong>2005 – 2009:</strong> Cử nhân Sư phạm Tin học, Trường Đại học Sư phạm - Đại học Đà Nẵng.</li>
+        </ul>
     </section>
 
     <section id="research">
-        <h2>Hướng nghiên cứu (Research Interests)</h2>
+        <h2>Hướng nghiên cứu chính (Research Interests)</h2>
         <ul>
-            <li>[Hướng nghiên cứu 1]</li>
-            <li>[Hướng nghiên cứu 2]</li>
-            <li>[Hướng nghiên cứu 3]</li>
+            <li>Học máy & Học sâu (Machine Learning & Deep Learning)</li>
+            <li>Thị giác máy tính (Computer Vision) & Nhận dạng đối tượng (Object Detection)</li>
+            <li>Phân tích dữ liệu & Trí tuệ kinh doanh (Data Analysis & Business Intelligence)</li>
         </ul>
     </section>
 
     <section id="publications">
-        <h2>Công trình khoa học (Publications)</h2>
-        <h3>Bài báo tạp chí / Hội thảo</h3>
-        <ol>
+        <h2>Công trình khoa học chọn lọc (Selected Publications)</h2>
+        <p style="font-size: 13px; color: #666; font-style: italic;">Các bài báo xuất bản tại các Tạp chí & Hội thảo Quốc tế được lưu vết Scopus / Springer / IEEE:</p>
+        <ol style="reverse: true;">
             <li>
-                <span class="pub-title">[Tên tác giả]</span> (2025). 
-                "[Tên bài báo khoa học]." 
-                <span class="pub-journal">[Tên Tạp chí / Hội thảo]</span>, Vol. X, No. Y. 
-                [<a href="#" target="_blank">Link/DOI</a>]
+                <span class="pub-title">Training-Free Geometric Rectification Framework for Extreme Few-Shot Satellite Image Classification.</span> <span class="badge">Springer LNAI</span><br>
+                <span class="pub-authors"><strong>Lam Mai</strong>, Dinh-Nguyen Le, Tan-Khoi Nguyen, Van-Dung Hoang, Hoang-Huu-To Nguyen.</span><br>
+                <span class="pub-journal">12th International Symposium on Integrated Uncertainty in Knowledge Modelling and Decision Making (IUKM), Springer LNAI, 2026/2027.</span>
             </li>
             <li>
-                <span class="pub-title">[Tên tác giả]</span> (2024). 
-                "[Tên bài báo khoa học 2]." 
-                <span class="pub-journal">[Tên Tạp chí / Hội thảo]</span>. 
-                [<a href="#" target="_blank">PDF</a>]
+                <span class="pub-title">D-GDA: Dopamine-Gated Differential Attention for Time-Series Anomaly Detection.</span> <span class="badge">Springer LNAI</span><br>
+                <span class="pub-authors">Duc Hien Nguyen, <strong>Lam Mai</strong>, Hoang Huu To Nguyen.</span><br>
+                <span class="pub-journal">12th International Symposium on Integrated Uncertainty in Knowledge Modelling and Decision Making (IUKM), Springer LNAI, 2026/2027.</span>
+            </li>
+            <li>
+                <span class="pub-title">Multimodal Geometric Deep Learning for Urban Commercial Potential Segmentation using Open Geospatial Data.</span> <span class="badge">Springer</span><br>
+                <span class="pub-authors">T. D. Nguyen, <strong>L. Mai</strong>, Q. X. N. Nguyen, and N. M. H. Nguyen.</span><br>
+                <span class="pub-journal">2nd International Symposium on Innovations in Computer Vision and Applications (ISICVA), Springer, 2026/2027.</span>
+            </li>
+            <li>
+                <span class="pub-title">RWT-Net: A Hybrid ResNet-Wavelet-Transformer for Early Detection of Left Ventricular Hypertrophy.</span> <span class="badge">Scopus Q3</span><br>
+                <span class="pub-authors">Hoang-Huu-To Nguyen, Phuong Huu Nghia Le, <strong>Lam Mai</strong>, Ho-Trong-Nguyen Pham.</span><br>
+                <span class="pub-journal">Telkomnika (Telecommunication Computing Electronics and Control), Vol. 23, 2025.</span>
+            </li>
+            <li>
+                <span class="pub-title">Enhanced Revenue Prediction Model Using a Machine Learning-Based Data Warehouse Approach.</span> <span class="badge">Springer LNNS</span><br>
+                <span class="pub-authors">My-Dung Phuong Hoang, Duc-Hien Nguyen, <strong>Lam Mai</strong>.</span><br>
+                <span class="pub-journal">Proceedings of CITA 2025, Lecture Notes in Networks and Systems (Springer), Vol. 1581, 2025.</span>
+            </li>
+            <li>
+                <span class="pub-title">Explainable Multi-Angle License Plate Detection for Autonomous Vehicles Using YOLOv8-OBB and Attention Fusion.</span> <span class="badge">Springer LNEE</span><br>
+                <span class="pub-authors"><strong>Lam Mai</strong>, Duc Hien Nguyen, Trong Tung Nguyen.</span><br>
+                <span class="pub-journal">1st International Conference on Explainable Intelligence in Digital Twins, Springer LNEE, 2025.</span>
+            </li>
+            <li>
+                <span class="pub-title">Multi-Oriented License Plate Detection Based On Convolutional Neural Networks.</span> <span class="badge">IEEE</span><br>
+                <span class="pub-authors"><strong>L. Mai</strong>, X. -Z. Chen and Y. -L. Chen.</span><br>
+                <span class="pub-journal">2021 International Conference on System Science and Engineering (ICSSE), IEEE, pp. 101-104, 2021.</span>
+            </li>
+            <li>
+                <span class="pub-title">Multi-view Vehicle Re-Identification Method Based on Siamese Convolutional Neural Network Structure.</span> <span class="badge">IEEE</span><br>
+                <span class="pub-authors"><strong>Lam Mai</strong>, Xiu-Zhi Chen, Chao-Wei Yu, and Yen-Lin Chen.</span><br>
+                <span class="pub-journal">2020 IEEE International Conference on Consumer Electronics - Taiwan (ICCE-TW), IEEE, pp. 100-104, 2020.</span>
             </li>
         </ol>
     </section>
 
     <section id="teaching">
-        <h2>Giảng dạy (Teaching)</h2>
+        <h2>Giảng dạy (Teaching Responsibilities)</h2>
         <ul>
-            <li><strong>Mã môn 1:</strong> Tên môn học 1 (Đại học)</li>
-            <li><strong>Mã môn 2:</strong> Tên môn học 2 (Cao học)</li>
+            <li>Học máy (Machine Learning)</li>
+            <li>Phân tích dữ liệu chuỗi thời gian (Time Series Data Analysis)</li>
+            <li>Khai phá dữ liệu web (Web Mining)</li>
+            <li>Kho dữ liệu & Cơ sở dữ liệu (Data Warehouse & Databases)</li>
+            <li>Trí tuệ nhân tạo (Artificial Intelligence)</li>
         </ul>
     </section>
 
