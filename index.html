@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hồ sơ Giảng viên & Nghiên cứu khoa học</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #2b2b2b;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f4f6f9;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 30px 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+        }
+        h1 { margin: 0 0 8px 0; font-size: 28px; }
+        .subtitle { font-style: italic; opacity: 0.9; margin-bottom: 15px; }
+        .contact-info a { color: #66b2ff; text-decoration: none; margin-right: 15px; font-size: 15px; }
+        .contact-info a:hover { text-decoration: underline; }
+        
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 6px; margin-top: 0; font-size: 20px; }
+        
+        ul, ol { padding-left: 20px; }
+        li { margin-bottom: 10px; }
+        .pub-title { font-weight: bold; }
+        .pub-journal { font-style: italic; color: #555; }
+        
+        .btn-cv {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .btn-cv:hover { background: #002244; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TS. [Họ và Tên của bạn]</h1>
+        <div class="subtitle">Giảng viên / Nhà nghiên cứu - Khoa [Tên Khoa]</div>
+        <p>Trường Đại học [Tên Trường]</p>
+        <div class="contact-info">
+            📧 Email: <a href="mailto:email@university.edu.vn">email@university.edu.vn</a>
+            🔗 <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+            🔗 <a href="https://orcid.org" target="_blank">ORCID</a>
+        </div>
+    </header>
+
+    <section id="bio">
+        <h2>Giới thiệu (Biography)</h2>
+        <p>
+            Tôi hiện là Giảng viên tại Khoa [Tên Khoa], Trường Đại học [Tên Trường]. 
+            Các hướng nghiên cứu chính của tôi tập trung vào [Lĩnh vực 1], [Lĩnh vực 2] và [Lĩnh vực 3].
+        </p>
+        <!-- Nút tải file CV -->
+        <a href="CV_Mlam.pdf" class="btn-cv" target="_blank">📄 Tải CV hoàn chỉnh (PDF)</a>
+    </section>
+
+    <section id="research">
+        <h2>Hướng nghiên cứu (Research Interests)</h2>
+        <ul>
+            <li>[Hướng nghiên cứu 1]</li>
+            <li>[Hướng nghiên cứu 2]</li>
+            <li>[Hướng nghiên cứu 3]</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Công trình khoa học (Publications)</h2>
+        <h3>Bài báo tạp chí / Hội thảo</h3>
+        <ol>
+            <li>
+                <span class="pub-title">[Tên tác giả]</span> (2025). 
+                "[Tên bài báo khoa học]." 
+                <span class="pub-journal">[Tên Tạp chí / Hội thảo]</span>, Vol. X, No. Y. 
+                [<a href="#" target="_blank">Link/DOI</a>]
+            </li>
+            <li>
+                <span class="pub-title">[Tên tác giả]</span> (2024). 
+                "[Tên bài báo khoa học 2]." 
+                <span class="pub-journal">[Tên Tạp chí / Hội thảo]</span>. 
+                [<a href="#" target="_blank">PDF</a>]
+            </li>
+        </ol>
+    </section>
+
+    <section id="teaching">
+        <h2>Giảng dạy (Teaching)</h2>
+        <ul>
+            <li><strong>Mã môn 1:</strong> Tên môn học 1 (Đại học)</li>
+            <li><strong>Mã môn 2:</strong> Tên môn học 2 (Cao học)</li>
+        </ul>
+    </section>
+
+</body>
+</html>
